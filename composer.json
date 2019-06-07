@@ -1,0 +1,25 @@
+{
+  "name":"stefansl/contao-baguettebox",
+  "description":"Baguettebox for Contao",
+  "type": "contao-bundle",
+  "require": {
+    "php": ">=7.1",
+    "contao/core-bundle":"~4.4"
+  },
+  "require-dev": {
+    "contao/manager-plugin": "^4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Clickpress\\BaguetteboxBundle\\": "src/"
+    }
+  },
+  "license": "LGPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Stefan Schulz-Lauterbach",
+      "email": "ssl@clickpress.de"
+    }
+  ],
+  "minimum-stability": "stable"
+}
