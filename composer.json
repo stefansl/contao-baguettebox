@@ -1,10 +1,9 @@
 {
-  "name":"stefansl/contao-baguettebox",
-  "description":"Baguettebox for Contao",
-  "keywords":["contao","lightbox", "vanillajs"],
+  "name": "stefansl/contao-baguettebox",
   "type": "contao-bundle",
+  "description":"Baguettebox for Contao",
   "homepage":"https://clickpress.de",
-  "license":"MIT",
+  "license": "LGPL-3.0-or-later",
   "authors":[
     {
       "name":"CLICKPRESS",
@@ -16,20 +15,22 @@
     "php":">=7.1",
     "contao/core-bundle":"^4.4"
   },
-
-  "autoload":{
-    "psr-4": {
-      "Clickpress\\BaguetteboxBundle\\": "src/"
-    },
-    "classmap": [
-      "src/Resources/contao/"
-    ],
-    "exclude-from-classmap": [
-      "src/Resources/contao/config/",
-      "src/Resources/contao/templates/"
-    ]
+  "require-dev": {
+    "contao/manager-plugin": "^2.0",
+    "friendsofphp/php-cs-fixer": "^2.12",
+    "php-http/guzzle6-adapter": "^1.1",
+    "php-http/message-factory": "^1.0.2"
   },
-  "extra":{
-    "contao-manager-plugin": "Clickpress\\BaguetteboxBundle\\ContaoManager\\Plugin"
+  "extra": {
+    "contao-manager-plugin": "Clickpress\\Baguettebox\\ContaoManager\\Plugin"
+  },
+  "autoload": {
+    "psr-4": {
+      "Clickpress\\Baguettebox\\": "src/"
+    }
+  },
+  "support": {
+    "issues": "https://github.com/stefansl/contao-baguettebox/issues",
+    "source": "https://github.com/stefansl/contao-baguettebox"
   }
 }
