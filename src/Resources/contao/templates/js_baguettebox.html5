@@ -7,10 +7,15 @@ $GLOBALS['TL_CSS'][] = 'bundles/clickpressbaguettebox/baguetteBox.css|static';
 
 <script src="bundles/clickpressbaguettebox/baguetteBox.min.js"></script>
 <script>
-  baguetteBox.run('.ce_image a',{
+window.addEventListener('load', function() {
+	baguetteBox.run('.ce_image a',{
+    buttons: false
+  });
+  baguetteBox.run('.ce_text .image_container a',{
     buttons: false
   });
   baguetteBox.run('.ce_gallery',{
     buttons: true
   });
+})
 </script>
