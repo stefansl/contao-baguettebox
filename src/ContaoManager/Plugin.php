@@ -8,8 +8,9 @@
  * @license LGPL-3.0-or-later
  */
 
-namespace Clickpress\Baguettebox\ContaoManager;
+namespace Clickpress\BaguetteboxBundle\ContaoManager;
 
+use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
@@ -22,8 +23,8 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create(\Clickpress\Baguettebox\ClickpressBaguetteboxBundle::class)
-                ->setLoadAfter([\Contao\CoreBundle\ContaoCoreBundle::class]),
+            BundleConfig::create(\Clickpress\BaguetteboxBundle\ClickpressBaguetteboxBundle::class)
+                ->setLoadAfter([ContaoCoreBundle::class]),
         ];
     }
 }

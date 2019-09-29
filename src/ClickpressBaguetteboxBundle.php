@@ -8,7 +8,7 @@
  * @license LGPL-3.0-or-later
  */
 
-namespace Clickpress\Baguettebox;
+namespace Clickpress\BaguetteboxBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

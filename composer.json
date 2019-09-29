@@ -1,36 +1,34 @@
 {
-  "name": "stefansl/contao-baguettebox",
-  "type": "contao-bundle",
-  "description":"Baguettebox for Contao",
-  "homepage":"https://clickpress.de",
-  "license": "LGPL-3.0-or-later",
-  "authors":[
-    {
-      "name":"CLICKPRESS",
-      "homepage":"https://clickpress.de",
-      "role":"Developer"
+    "name": "stefansl/contao-baguettebox",
+    "type": "contao-bundle",
+    "description": "Baguettebox for Contao",
+    "homepage": "https://clickpress.de",
+    "license": "LGPL-3.0-or-later",
+    "authors": [{
+        "name": "CLICKPRESS",
+        "homepage": "https://clickpress.de",
+        "role": "Developer"
+    }],
+    "require": {
+        "php": ">=7.1",
+        "contao/core-bundle": "^4.4"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0",
+        "friendsofphp/php-cs-fixer": "^2.12",
+        "php-http/guzzle6-adapter": "^1.1",
+        "php-http/message-factory": "^1.0.2"
+    },
+    "extra": {
+        "contao-manager-plugin": "Clickpress\\BaguetteboxBundle\\ContaoManager\\Plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Clickpress\\BaguetteboxBundle\\": "src/"
+        }
+    },
+    "support": {
+        "issues": "https://github.com/stefansl/contao-baguettebox/issues",
+        "source": "https://github.com/stefansl/contao-baguettebox"
     }
-  ],
-  "require":{
-    "php":">=7.1",
-    "contao/core-bundle":"^4.4"
-  },
-  "require-dev": {
-    "contao/manager-plugin": "^2.0",
-    "friendsofphp/php-cs-fixer": "^2.12",
-    "php-http/guzzle6-adapter": "^1.1",
-    "php-http/message-factory": "^1.0.2"
-  },
-  "extra": {
-    "contao-manager-plugin": "Clickpress\\Baguettebox\\ContaoManager\\Plugin"
-  },
-  "autoload": {
-    "psr-4": {
-      "Clickpress\\Baguettebox\\": "src/"
-    }
-  },
-  "support": {
-    "issues": "https://github.com/stefansl/contao-baguettebox/issues",
-    "source": "https://github.com/stefansl/contao-baguettebox"
-  }
 }
