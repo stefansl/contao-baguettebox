@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of ClickpressBaguetteboxBundle.
+ * This file is part of BaguetteBoxBundle.
  *
  * (c) Stefan Schulz-Lauterbach
  *
