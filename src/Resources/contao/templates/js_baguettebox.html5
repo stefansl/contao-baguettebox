@@ -1,7 +1,7 @@
 <?php
 
 // Add the baguettebox style sheet
-$GLOBALS['TL_CSS'][] = 'bundles/clickpressbaguettebox/baguetteBox.css|static';
+$GLOBALS['TL_CSS'][] = 'bundles/clickpressbaguettebox/baguetteBox.min.css|static';
 
 ?>
 
