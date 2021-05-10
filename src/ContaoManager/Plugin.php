@@ -1,7 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 /*
- * This file is part of BaguetteBoxBundle.
+ * This file is part of the BaguetteBoxBundle for Contao.
  *
  * (c) Stefan Schulz-Lauterbach
  *
@@ -10,6 +12,7 @@
 
 namespace Clickpress\BaguetteboxBundle\ContaoManager;
 
+use Clickpress\BaguetteboxBundle\ClickpressBaguetteboxBundle;
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
@@ -23,7 +26,7 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create(\Clickpress\BaguetteboxBundle\ClickpressBaguetteboxBundle::class)
+            BundleConfig::create(ClickpressBaguetteboxBundle::class)
                 ->setLoadAfter([ContaoCoreBundle::class]),
         ];
     }

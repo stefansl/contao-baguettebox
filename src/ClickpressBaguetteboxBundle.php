@@ -1,7 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 /*
- * This file is part of BaguetteBoxBundle.
+ * This file is part of the BaguetteBoxBundle for Contao.
  *
  * (c) Stefan Schulz-Lauterbach
  *
